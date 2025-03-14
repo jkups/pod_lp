@@ -4,31 +4,487 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
+    <title>Odarun: Simplify product listing and ordering for print on demand creators.</title>
+    <link rel="icon" type="image/png" href="/icon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/icon/favicon.svg" />
+    <link rel="shortcut icon" href="/icon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="odarun" />
+    <link rel="manifest" href="/icon/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+      html { scroll-behavior: smooth; }
+    </style>
+    <style type="text/tailwindcss">
+      .lucide-circle-dot-dashed {
+        @apply text-pink-500;
+      }
+    </style>
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "usz4ug5ras");
+    </script>
+    <script>
+      (function(w, d, t, h, s, n) {
+        w.FlodeskObject = n;
+        var fn = function() {
+          (w[n].q = w[n].q || []).push(arguments);
+        };
+        w[n] = w[n] || fn;
+        var f = d.getElementsByTagName(t)[0];
+        var v = '?v=' + Math.floor(new Date().getTime() / (120 * 1000)) * 60;
+        var sm = d.createElement(t);
+        sm.async = true;
+        sm.type = 'module';
+        sm.src = h + s + '.mjs' + v;
+        f.parentNode.insertBefore(sm, f);
+        var sn = d.createElement(t);
+        sn.async = true;
+        sn.noModule = true;
+        sn.src = h + s + '.js' + v;
+        f.parentNode.insertBefore(sn, f);
+      })(window, document, 'script', 'https://assets.flodesk.com', '/universal', 'fd');
+    </script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Outfit'],
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
-    <section class="min-h-screen py-8 md:py-10 !bg-no-repeat !bg-cover" id="hero" style="background: url(img/background.png)">
-      <div class="max-w-screen-xl 2xl:max-w-screen-2xl mx-auto relative min-h-screen">
-        <div class="mx-6 ">
-          <header>
-            <div class="text-3xl font-bold text-pink-500 md:mb-16">odarun</div>
-          </header>
-          <div class="grid grid-cols-1 md:grid-cols-12 gap-x-24 md:py-5">
-            <div class="md:col-span-4 py-5 md:mt-4">
-              <h1 class="font-bold text-2xl md:text-4xl">Upload and process your orders with ease.</h1>
-              <p class="my-4 text-gray-500">We handle the repetitive task of managing your products so you can focus on what you do best.</p>
-              <button class="hidden md:block bg-pink-400 text-white py-2 px-6 rounded-xl font-semibold text-lg mt-10 md:mt-20">Comming soon</button>
+    <header class="pt-4 md:py-10">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <nav class="relative z-50 text-lg flex justify-between">
+          <div class="flex items-end gap-x-6 text-slate-700">
+            <a aria-label="Home" href="/" class="text-3xl font-semibold flex items-center gap-1 lg:text-2xl">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-dot-dashed-icon lucide-circle-dot-dashed"><path d="M10.1 2.18a9.93 9.93 0 0 1 3.8 0"/><path d="M17.6 3.71a9.95 9.95 0 0 1 2.69 2.7"/><path d="M21.82 10.1a9.93 9.93 0 0 1 0 3.8"/><path d="M20.29 17.6a9.95 9.95 0 0 1-2.7 2.69"/><path d="M13.9 21.82a9.94 9.94 0 0 1-3.8 0"/><path d="M6.4 20.29a9.95 9.95 0 0 1-2.69-2.7"/><path d="M2.18 13.9a9.93 9.93 0 0 1 0-3.8"/><path d="M3.71 6.4a9.95 9.95 0 0 1 2.7-2.69"/><circle cx="12" cy="12" r="1"/></svg>
+              <span>odarun</span>
+            </a>
+            <div class="hidden md:flex md:gap-x-6">
+              <a class="inline-block rounded-lg px-2 underline-offset-4 hover:underline" href="#features">Features</a>
+              <a class="inline-block rounded-lg px-2 underline-offset-4 hover:underline" href="#pricing">Pricing</a>
             </div>
-            <div class="md:col-span-8 ml-auto mt-6 md:mt-0">
-              <div class="rounded-xl shadow overflow-hidden ring-offset-0 ring-8 ring-black/20 relative right-8">
-                <img class="img-fluid h-72 md:h-full" src="img/odarun.png" alt="">
-              </div>
-            </div>
-            <button class="md:hidden bg-pink-400 text-white w-7/12 py-2 px-6 rounded-xl font-semibold text-lg mt-16 mb-24">Comming soon</button>
           </div>
-          <div class="absolute bottom-4 text-gray-500 text-sm">Copyright. Wulo 2023.</div>
+          <div class="flex items-center gap-x-2">
+            <a class="rounded-full py-2 px-4 bg-blue-600 text-white hover:text-slate-100 hover:bg-blue-500 active:bg-blue-800 active:text-blue-100 text-sm md:text-base" href="#early-access">
+              Request early access
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-0 md:pb-16 text-center">
+        <h1 class="mx-auto max-w-4xl text-4xl font-medium tracking-tight text-slate-900 sm:text-7xl">Simplify Amazon POD
+          <span class="relative whitespace-nowrap text-blue-600">
+            <svg aria-hidden="true" viewBox="0 0 418 42" class="absolute left-0 top-2/3 h-[0.58em] w-full fill-blue-300/70" preserveAspectRatio="none"><path d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z"></path>
+            </svg>
+
+            <span class="relative">listings & orders</span>
+          </span> - without the manual grind.
+        </h1>
+        <p class="mx-auto mt-6 max-w-2xl text-lg sm:text-2xl tracking-tight text-slate-700">Odarun helps print-on-demand sellers automate product listings and order workflows so adding new designs doesn't create more manual work or fulfillment risk.</p>
+
+        <p class="mx-auto mt-6 max-w-2xl text-sm tracking-tight text-slate-500">Early access &nbsp; &middot; &nbsp; Founder-led onboarding</p>
+
+        <div class="my-16 space-y-2">
+          <a class="group inline-block ring-1 items-center justify-center rounded-full py-2 px-8 focus:outline-none ring-slate-200 text-slate-700 hover:text-slate-900 hover:ring-slate-300 active:bg-slate-100 active:text-slate-600 focus-visible:outline-blue-600 focus-visible:ring-slate-300" variant="outline" color="slate" href="#workflow">
+            <div>See the workflow</div>
+          </a>
+          <div>&darr;</div>
         </div>
       </div>
-    </section>
+
+      <!-- Workflow Section -->
+      <section id="workflow" class="pb-14 pt-20 sm:pb-20 sm:pt-32 lg:pb-32 border-t">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-2xl md:text-center xl:max-w-none">
+            <h2 class="text-3xl tracking-tight text-slate-900 sm:text-4xl">From design to delivery - one connected POD workflow</h2>
+            <p class="mt-4 text-xl tracking-tight text-slate-700">Most print-on-demand tools only solve one part of the process.</p>
+          </div>
+          <div class="my-10 md:my-20">
+            <div class="grid gap-4 lg:grid-cols-3 md:space-y-0">
+              <div class="flex gap-x-4 border rounded-md p-8">
+                <div class="w-9 rounded-lg bg-slate-900">
+                  <div class="h-9 w-9 flex items-center justify-center text-slate-200 font-bold text-2xl">1</div>
+                </div>
+                <div class="flex justify-between w-full items-center text-2xl">
+                  <h3 class="font-medium text-slate-900">
+                    Design
+                  </h3>
+                  <div class="hidden lg:block">&rarr;</div>
+                  <div class="block lg:hidden">&darr;</div>
+                </div>
+              </div>
+              <div class="flex gap-x-4 border rounded-md p-8">
+                <div class="w-9 rounded-lg bg-slate-900">
+                  <div class="h-9 w-9 flex items-center justify-center text-slate-200 font-bold text-2xl">2</div>
+                </div>
+                <div class="flex justify-between w-full items-center text-2xl">
+                  <h3 class="font-medium text-slate-900">
+                    Amazon Listing
+                  </h3>
+                  <div class="hidden lg:block">&rarr;</div>
+                  <div class="block lg:hidden">&darr;</div>
+                </div>
+              </div>
+              <div class="flex gap-x-4 border rounded-md p-8">
+                <div class="w-9 rounded-lg bg-slate-900">
+                  <div class="h-9 w-9 flex items-center justify-center text-slate-200 font-bold text-2xl">3</div>
+                </div>
+                <div class="flex justify-between w-full items-center text-2xl">
+                  <h3 class="font-medium text-slate-900">
+                    Order
+                  </h3>
+                  <div>&darr;</div>
+                </div>
+              </div>
+              <div class="flex gap-x-4 border rounded-md p-8 bg-slate-900">
+                <div class="w-9 rounded-lg bg-slate-200">
+                  <div class="h-9 w-9 flex items-center justify-center text-slate-900 font-bold text-2xl">6</div>
+                </div>
+                <div class="flex justify-between w-full items-center text-2xl text-slate-200">
+                  <h3 class="text-2xl font-medium">
+                    Peace of mind
+                  </h3>
+                  <div class="hidden lg:block">&uarr;</div>
+                  <div class="block lg:hidden">&darr;</div>
+                </div>
+              </div>
+              <div class="flex gap-x-4 border rounded-md p-8 bg-slate-900 row-start-5 lg:row-start-auto">
+                <div class="w-9 rounded-lg bg-slate-200">
+                  <div class="h-9 w-9 flex items-center justify-center text-slate-900 font-bold text-2xl">5</div>
+                </div>
+                <div class="flex justify-between w-full items-center text-2xl text-slate-200">
+                  <h3 class="text-2xl font-medium">
+                    Shipping Update
+                  </h3>
+                  <div class="hidden lg:block">&larr;</div>
+                  <div class="block lg:hidden">&darr;</div>
+                </div>
+              </div>
+              <div class="flex gap-x-4 border rounded-md p-8 bg-slate-900 row-start-4 lg:row-start-auto">
+                <div class="w-9 rounded-lg bg-slate-200">
+                  <div class="h-9 w-9 flex items-center justify-center text-slate-900 font-bold text-2xl">4</div>
+                </div>
+                <div class="flex justify-between w-full items-center text-2xl text-slate-200">
+                  <h3 class="text-2xl font-medium">
+                    Print Provider
+                  </h3>
+                  <div class="hidden lg:block">&larr;</div>
+                  <div class="block lg:hidden">&darr;</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid lg:grid-cols-5 lg:gap-16 border-t lg:pt-20">
+            <div class="col-span-2 text-slate-700 pt-6 mb-6">
+              <p class="text-xl">Odarun connects Amazon listings, orders, and fulfillment with Printful or Printify into a single predictable workflow - so nothing breaks as you add more designs.</p>
+              <ul class="list-disc list-inside mt-4 mb-8 text-slate-500">
+                <li>Create and manage Amazon POD listings</li>
+                <li>Process orders to Printful or Printify</li>
+                <li>Track fulfillment and shipping in one place</li>
+                <li>Reduce repetitive setup and manual checks</li>
+              </ul>
+              <p>See a quick walkthrough showing design, listings, and orders workflow &rarr;</p>
+            </div>
+            <div class="col-span-3" style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe class="rounded-xl overflow-hidden shadow-md" src="https://www.loom.com/embed/fbc28c782abf45dcb0dc2973d997eec8" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Odarun -->
+      <section id="why" aria-label="Features" class="relative overflow-hidden md:text-center pb-28 pt-20 sm:py-32 border-t">
+        <div class="max-w-4xl mx-auto px-6 lg:mb-12 lg:px-8">
+          <h2 class="tracking-tight mb-8 text-4xl md:text-5xl">Why Odarun exists</h2>
+        </div>
+        <div class="mx-auto max-w-4xl text-xl text-slate-700 lg:text-2xl font-light space-y-4 px-6 lg:px-8 relative">
+          <p>Most print-on-demand journeys on Amazon start the same way.</p>
+          <p>An idea. A design. A belief that this product could sell.</p>
+          <p>Then reality sets in.</p>
+          <p>You open Amazon Seller Central and realise that listing a single product means juggling flat files, variants, mockups, and rules that weren’t built with print on demand in mind.
+          </p>
+          <p>Orders come in—but now you’re copying them into spreadsheets, emailing print providers, tracking fulfilment in another tab, and hoping nothing slips through the cracks. Every new design feels like adding weight to a system already under strain.</p>
+          <p>You try a print provider integration, but then you're locked in. What should feel like building a brand starts to feel like managing chaos.</p>
+          <p>That frustration is why <strong>Odarun</strong> exists.</p>
+        </div>
+      </section>
+
+      <!-- Transition Section -->
+      <section aria-label="Features" class="relative overflow-hidden bg-slate-900 py-16">
+        <div class="mx-auto max-w-full px-4 sm:px-6 lg:px-8 relative">
+          <div class="max-w-3xl space-y-4 text-white md:mx-auto text-center">
+            <h2 class="text-2xl md:text-4xl">We built Odarun to remove these pain points. Here's what that looks like in practice.</h2>
+            <div>&darr;</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feature Section -->
+      <section id="features" aria-label="Features" class="relative overflow-hidden bg-blue-600 py-20 sm:py-32">
+        <div class="mx-auto max-w-full px-4 sm:px-6 lg:px-8 relative">
+          <div class="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
+            <h2 class="text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">One workflow for listings, orders, and fulfillment.</h2>
+            <p class="mt-6 text-xl tracking-tight text-blue-100">Replace manual steps and disconnected tools with a single, predictable POD workflow. </p>
+          </div>
+          <div class="absolute top-38 md:top-48 left-32 xl:left-auto xl:top-36 space-y-2 flex text-blue-900 items-center">
+            <span class="text-blue-900 font-bold text-2xl">Pain Points</span>
+            <svg class="w-12 h-12 pt-4" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 500.381"><path fill="currentColor" fill-rule="nonzero" d="M148.5 266.162l101.348 15.512c-4.533-45.566-15.782-96.144-45.925-138.827C170.207 95.09 112.142 56.46 11.975 44.521 4.539 43.65-.785 36.895.096 29.449c.68-5.734 4.863-10.218 10.147-11.559C42.878 7.002 73.712 1.417 102.654.246c79.461-3.272 144.331 26.411 193.76 70.235 48.958 43.393 82.704 100.738 100.407 153.438 6.806 20.196 11.279 39.821 13.37 57.815l85.897-15.453c7.345-1.32 14.391 3.574 15.702 10.919a13.55 13.55 0 01-2.902 11.008l-171.432 207.26c-4.774 5.764-13.341 6.575-19.095 1.802l-1.591-1.542-180.53-207.219c-4.924-5.645-4.323-14.231 1.321-19.155a13.549 13.549 0 0110.939-3.193v.001z"/></svg>
+          </div>
+          <div class="mt-8 grid grid-cols-1 items-center pt-10 gap-y-4 md:mt-20 xl:grid-cols-12 md:pt-0">
+            <div class="-mx-4 flex pb-4 overflow-x-auto sm:mx-0 xl:overflow-hidden xl:col-span-5">
+              <div class="relative z-10 flex gap-x-4 whitespace-nowrap px-4 sm:mx-auto sm:px-0 xl:mx-0 xl:block xl:gap-x-0 xl:gap-y-1 xl:whitespace-normal">
+                <div class="xl:before:content-['1'] xl:before:flex xl:before:text-8xl xl:before:absolute xl:before:top-2 xl:before:left-4 xl:before:text-blue-800 relative rounded-full px-4 py-1 xl:rounded-l-xl xl:rounded-r-none xl:py-4 xl:pl-24 xl:pr-6 bg-white xl:bg-white/10 xl:ring-1 xl:ring-inset ring-white/10 xl:hover:bg-white/10 xl:bg-transparent">
+                  <h3>
+                    <button class="featureButton xl:text-lg xl:font-semibold text-blue-600 xl:text-white" type="button" onclick="swapFeature(this, 'product')">
+                      <span class="absolute inset-0 rounded-full xl:rounded-l-xl xl:rounded-r-none"></span>
+                      Manual Listings
+                      <div class="absolute -bottom-4 text-center text-white xl:hidden">&#9660;</div>
+                    </button>
+                  </h3>
+                  <p class="mt-1 hidden xl:block text-white xl:text-blue-200">Listing POD products is repetitive. Create, mock up, and publish in one flow — no flat files, no delays.</p>
+                </div>
+                <div class="xl:before:content-['2'] xl:before:flex xl:before:text-8xl xl:before:absolute xl:before:top-2 xl:before:left-4 xl:before:text-blue-800 relative rounded-full px-4 py-1 xl:rounded-l-xl xl:rounded-r-none xl:py-4 xl:pl-24 xl:pr-6 bg-white/10 ring-white/10 xl:hover:bg-white/10 xl:bg-transparent">
+                  <h3>
+                    <button class="featureButton xl:text-lg xl:font-semibold text-blue-100 xl:text-white" type="button" onclick="swapFeature(this, 'collection')">
+                      <span class="absolute inset-0 rounded-full xl:rounded-l-xl xl:rounded-r-none"></span>
+                      Variant Sprawl
+                      <div class="absolute -bottom-4 left-8 text-center text-white hidden xl:hidden">&#9660;</div>
+                    </button>
+                  </h3>
+                  <p class="mt-1 hidden xl:block text-white xl:text-blue-200">Managing sizes and colours gets messy fast. Group variants into one clean Amazon listing.</p>
+                </div>
+                <div class="xl:before:content-['3'] xl:before:flex xl:before:text-8xl xl:before:absolute xl:before:top-2 xl:before:left-4 xl:before:text-blue-800 relative rounded-full px-4 py-1 xl:rounded-l-xl xl:rounded-r-none xl:py-4 xl:pl-24 xl:pr-6 bg-white/10 ring-white/10 xl:hover:bg-white/10 xl:bg-transparent">
+                  <h3>
+                    <button class="featureButton xl:text-lg xl:font-semibold text-blue-100 xl:text-white" type="button" onclick="swapFeature(this, 'order')">
+                      <span class="absolute inset-0 rounded-full xl:rounded-l-xl xl:rounded-r-none"></span>
+                      Manual Orders
+                      <div class="absolute -bottom-4 left-16 text-center text-white hidden xl:hidden">&#9660;</div>
+                    </button>
+                  </h3>
+                  <p class="mt-1 hidden xl:block text-white xl:text-blue-200">Orders shouldn’t be copied between tools. Send them straight to your print provider automatically.</p>
+                </div>
+                <div class="xl:before:content-['4'] xl:before:flex xl:before:text-8xl xl:before:absolute xl:before:top-2 xl:before:left-4 xl:before:text-blue-800 relative rounded-full px-4 py-1 xl:rounded-l-xl xl:rounded-r-none xl:py-4 xl:pl-24 xl:pr-6 bg-white/10 ring-white/10 xl:hover:bg-white/10 xl:bg-transparent">
+                  <h3>
+                    <button class="featureButton xl:text-lg xl:font-semibold text-blue-100 xl:text-white" type="button" onclick="swapFeature(this, 'media')">
+                      <span class="absolute inset-0 rounded-full xl:rounded-l-xl xl:rounded-r-none"></span>
+                      Design Chaos
+                      <div class="absolute -bottom-4 right-8 text-center text-white hidden xl:hidden">&#9660;</div>
+                    </button>
+                  </h3>
+                  <p class="mt-1 hidden xl:block text-white xl:text-blue-200">Designs live everywhere and never fit right. Manage files once and generate print-ready artwork.</p>
+                </div>
+                <div class="xl:before:content-['5'] xl:before:flex xl:before:text-8xl xl:before:absolute xl:before:top-2 xl:before:left-4 xl:before:text-blue-800 relative rounded-full px-4 py-1 xl:rounded-l-xl xl:rounded-r-none xl:py-4 xl:pl-24 xl:pr-6 bg-white/10 ring-white/10 xl:hover:bg-white/10 xl:bg-transparent">
+                  <h3>
+                    <button class="featureButton xl:text-lg xl:font-semibold text-blue-100 xl:text-white" type="button" onclick="swapFeature(this, 'dashboard')">
+                      <span class="absolute inset-0 rounded-full xl:rounded-l-xl xl:rounded-r-none"></span>
+                      Scattered Metrics
+                      <div class="absolute -bottom-4 right-4 text-center text-white hidden xl:hidden">&#9660;</div>
+                    </button>
+                  </h3>
+                  <p class="mt-1 hidden xl:block text-white lg:text-blue-200">Data lives in too many places. Track sales, revenue, and products in one clear dashboard.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Feature Mobile Texts -->
+            <div class="text-center -mt-5 w-full lg:w-auto mx-auto md:mb-0 text-white bg-blue-900 rounded-xl lg:rounded-full py-2 px-2 md:px-4 lg:px-24 leading-5 xl:hidden">
+              <p id="product-text" class="block xl:hidden">Listing POD products is repetitive. Create, mock up, and publish in one flow — no flat files, no delays.</p>
+              <p id="collection-text" class="hidden">Managing sizes and colours gets messy fast. Group variants into one clean Amazon listing.</p>
+              <p id="order-text" class="hidden">Orders shouldn’t be copied between tools. Send them straight to your print provider automatically.</p>
+              <p id="media-text" class="hidden">Designs live everywhere and never fit right. Manage files once and generate print-ready artwork.</p>
+              <p id="dashboard-text" class="hidden">Data lives in too many places. Track sales, revenue, and products in one clear dashboard.</p>
+            </div>
+
+            <!-- Feature Images -->
+            <div class="xl:col-span-7">
+              <div id="product" role="tabpanel" tabindex="0" class="featureImg">
+                <div class="w-[45rem] overflow-hidden mx-auto rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
+                  <img alt="" fetchpriority="high" width="2174" height="4000" decoding="async" class="w-full" style="color:transparent" src="img/product.png">
+                </div>
+              </div>
+              <div id="collection" role="tabpanel" tabindex="-1" class="featureImg" style="display: none;">
+                <div class="w-[45rem] overflow-hidden mx-auto rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
+                  <img alt="" fetchpriority="high" width="2174" height="4000" decoding="async" class="w-full" style="color:transparent" src="img/collection.png">
+                </div>
+              </div>
+              <div id="order" role="tabpanel" tabindex="-1" class="featureImg" style="display: none;">
+                <div class="w-[45rem] overflow-hidden mx-auto rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
+                  <img alt="" fetchpriority="high" width="2174" height="4000" decoding="async" class="w-full" style="color:transparent" src="img/order.png">
+                </div>
+              </div>
+              <div id="media" role="tabpanel" tabindex="-1" class="featureImg" style="display: none;">
+                <div class="w-[45rem] overflow-hidden mx-auto rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
+                  <img alt="" fetchpriority="high" width="2174" height="4000" decoding="async" class="w-full" style="color:transparent" src="img/media.png">
+                </div>
+              </div>
+              <div id="dashboard" role="tabpanel" tabindex="-1" class="featureImg" style="display: none;">
+                <div class="w-[45rem] overflow-hidden mx-auto rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
+                  <img alt="" fetchpriority="high" width="2174" height="4000" decoding="async" class="w-full" style="color:transparent" src="img/dashboard.png">
+                </div>
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Integration Section -->
+      <section id="secondary-features" class="pb-14 pt-20 sm:pb-20 sm:pt-32 lg:pb-32">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-2xl md:text-center xl:max-w-none"">
+            <h2 class="text-3xl tracking-tight text-slate-900 sm:text-4xl">Works with the tools Amazon POD sellers already use.</h2>
+            <p class="mt-4 text-xl tracking-tight text-slate-700">Odarun connects directly to Amazon and leading print providers so you can list, fulfill, and scale without rebuilding your workflow.</p>
+          </div>
+          <div class="mt-10 md:mt-20">
+            <div class="grid gap-6 xl:gap-10 lg:grid-cols-3 md:space-y-0">
+              <div class="border rounded-md p-8">
+                <div class="w-9 rounded-lg bg-slate-900">
+                  <div class="h-9 w-9 flex items-center justify-center text-slate-200 font-bold text-2xl">1</div>
+                </div>
+                <h3 class="mt-6 text-2xl font-medium text-slate-900">
+                  Amazon Seller Central
+                </h3>
+                <p class="mt-4 text-lg text-slate-600">Publish and manage POD listings directly in Amazon Seller Central - without wrestling with flat files or repeated setup.</p>
+              </div>
+              <div class="border rounded-md p-8">
+                <div class="w-9 rounded-lg bg-slate-900">
+                  <div class="h-9 w-9 flex items-center justify-center text-slate-200 font-bold text-2xl">2</div>
+                </div>
+                <h3 class="mt-6 text-2xl font-medium text-slate-900">
+                  Printful
+                </h3>
+                <p class="mt-4 text-lg text-slate-600">Send orders straight to Printful's in-house fulfillment network with branding options built in.</p>
+              </div>
+              <div class="border rounded-md p-8">
+                <div class="w-9 rounded-lg bg-slate-900">
+                  <div class="h-9 w-9 flex items-center justify-center text-slate-200 font-bold text-2xl">3</div>
+                </div>
+                <h3 class="mt-6 text-2xl font-medium text-slate-900">
+                  Printify
+                </h3>
+                <p class="mt-4 text-lg text-slate-600">Connect to multiple print providers across regions and product types without changing how you list or process orders.</p>
+              </div>
+              <div class="border rounded-md p-8 bg-slate-900">
+                <div class="w-9 rounded-lg bg-slate-200">
+                  <div class="h-9 w-9 flex items-center justify-center text-slate-900 font-bold text-2xl">4</div>
+                </div>
+                <h3 class="mt-6 text-2xl font-medium text-slate-200">
+                  Multi-Region Listing
+                </h3>
+                <p class="mt-4 text-lg text-slate-400">Create once and list products across multiple Amazon regions and stores.</p>
+              </div>
+              <div class="border rounded-md p-8 bg-slate-900">
+                <div class="w-9 rounded-lg bg-slate-200">
+                  <div class="h-9 w-9 flex items-center justify-center text-slate-900 font-bold text-2xl">5</div>
+                </div>
+                <h3 class="mt-6 text-2xl font-medium text-slate-200">
+                  AI-Assisted Creation
+                </h3>
+                <p class="mt-4 text-lg text-slate-400">Generate designs and mockups faster using AI - sized and formatted for print.</p>
+              </div>
+              <div class="border rounded-md p-8 bg-slate-900">
+                <div class="w-9 rounded-lg bg-slate-200">
+                  <div class="h-9 w-9 flex items-center justify-center text-slate-900 font-bold text-2xl">6</div>
+                </div>
+                <h3 class="mt-6 text-2xl font-medium text-slate-200">
+                  Unified Workflow
+                </h3>
+                <p class="mt-4 text-lg text-slate-400">Manage product listings and order fulfillment from a single platform.</p>
+              </div>
+            </div>
+          </div>
+          <p class="mt-10 text-slate-600">We're starting with the most common Amazon POD workflows and expanding integrations based on seller feedback.</p>
+        </div>
+      </section>
+
+      <!-- Pricing Section -->
+      <section id="pricing" aria-label="Pricing" class="bg-slate-900 py-20 sm:py-32">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="md:text-center">
+            <h2 class="font-display text-3xl tracking-tight text-white sm:text-4xl">
+              <span class="relative whitespace-nowrap">
+                <svg aria-hidden="true" viewBox="0 0 281 40" preserveAspectRatio="none" class="absolute left-0 top-1/2 h-[1em] w-full fill-blue-400"><path fill-rule="evenodd" clip-rule="evenodd" d="M240.172 22.994c-8.007 1.246-15.477 2.23-31.26 4.114-18.506 2.21-26.323 2.977-34.487 3.386-2.971.149-3.727.324-6.566 1.523-15.124 6.388-43.775 9.404-69.425 7.31-26.207-2.14-50.986-7.103-78-15.624C10.912 20.7.988 16.143.734 14.657c-.066-.381.043-.344 1.324.456 10.423 6.506 49.649 16.322 77.8 19.468 23.708 2.65 38.249 2.95 55.821 1.156 9.407-.962 24.451-3.773 25.101-4.692.074-.104.053-.155-.058-.135-1.062.195-13.863-.271-18.848-.687-16.681-1.389-28.722-4.345-38.142-9.364-15.294-8.15-7.298-19.232 14.802-20.514 16.095-.934 32.793 1.517 47.423 6.96 13.524 5.033 17.942 12.326 11.463 18.922l-.859.874.697-.006c2.681-.026 15.304-1.302 29.208-2.953 25.845-3.07 35.659-4.519 54.027-7.978 9.863-1.858 11.021-2.048 13.055-2.145a61.901 61.901 0 0 0 4.506-.417c1.891-.259 2.151-.267 1.543-.047-.402.145-2.33.913-4.285 1.707-4.635 1.882-5.202 2.07-8.736 2.903-3.414.805-19.773 3.797-26.404 4.829Zm40.321-9.93c.1-.066.231-.085.29-.041.059.043-.024.096-.183.119-.177.024-.219-.007-.107-.079ZM172.299 26.22c9.364-6.058 5.161-12.039-12.304-17.51-11.656-3.653-23.145-5.47-35.243-5.576-22.552-.198-33.577 7.462-21.321 14.814 12.012 7.205 32.994 10.557 61.531 9.831 4.563-.116 5.372-.288 7.337-1.559Z"></path>
+                </svg>
+                <span class="relative">Early access pricing,</span>
+              </span> that scales with your workflow.
+            </h2>
+            <p class="mt-4 text-xl text-slate-400">Start with a 7-day workflow trial. All plans include full access - pricing scales with usage, not features.<br/>No credit card required during trial, cancel anytime.</p>
+          </div>
+          <!-- Princing Table -->
+          <div id="pricingTable" class="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-3 xl:mx-0 xl:gap-x-4"></div>
+          <div class="mt-24 max-w-2xl sm:mx-auto xl:-mx-8 lg:max-w-none xl:mx-8 text-slate-400">
+            <p className="border-b border-solid border-slate-400 pb-10">
+              *Tokens reflect how often actions like publishing, order processing, or generating designs with AI are taken. As your catalog and order volume grow, higher plans give you more capacity - without restricting features.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section id="faq" aria-labelledby="faq-title" class="relative overflow-hidden bg-slate-50 py-20 sm:py-32">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
+          <div class="mx-auto max-w-2xl lg:max-w-none">
+            <h2 id="faq-title" class="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">Frequently asked questions</h2>
+            <p class="mt-4 text-xl tracking-tight text-slate-700">If you've got more questions, email <u>help@odarun.com</u> and someone will get back to you.</p>
+          </div>
+          <ul role="list" class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3">
+            <li>
+              <ul id="faqColOneWrapper" role="list" class="flex flex-col gap-y-8">
+              </ul>
+            </li>
+            <li>
+              <ul id="faqColTwoWrapper" role="list" class="flex flex-col gap-y-8">
+              </ul>
+            </li>
+            <li>
+              <ul id="faqColThreeWrapper" role="list" class="flex flex-col gap-y-8">
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Early Access -->
+      <section id="early-access" class="pb-28 pt-20">
+        <div id="fd-form-67d379c3c3f2e55494ef9cd8"></div>
+        <script>
+          window.fd('form', {
+            formId: '67d379c3c3f2e55494ef9cd8',
+            containerEl: '#fd-form-67d379c3c3f2e55494ef9cd8'
+          });
+        </script>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="md:flex items-center py-10 border-slate-200 justify-between space-y-4 md:space-y-0 text-slate-500">
+          <a class="hover:underline text-lg" href="./privacy.html">Privacy Policy</a>
+          <p id="copyright"></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/faq.js"></script>
+    <script src="./js/pricing.js"></script>
+    <script src="./js/feature.js"></script>
+    <script>
+      document.getElementById('copyright').appendChild(document.createTextNode(`Copyright © ${new Date().getFullYear()} Wulo. All rights reserved.`))</script>
+    </script>
   </body>
 </html>
