@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Odarun: Simplify product listing and ordering for print on demand creators.</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+      html { scroll-behavior: smooth; }
+    </style>
+    <script>
+      (function(w, d, t, h, s, n) {
+        w.FlodeskObject = n;
+        var fn = function() {
+          (w[n].q = w[n].q || []).push(arguments);
+        };
+        w[n] = w[n] || fn;
+        var f = d.getElementsByTagName(t)[0];
+        var v = '?v=' + Math.floor(new Date().getTime() / (120 * 1000)) * 60;
+        var sm = d.createElement(t);
+        sm.async = true;
+        sm.type = 'module';
+        sm.src = h + s + '.mjs' + v;
+        f.parentNode.insertBefore(sm, f);
+        var sn = d.createElement(t);
+        sn.async = true;
+        sn.noModule = true;
+        sn.src = h + s + '.js' + v;
+        f.parentNode.insertBefore(sn, f);
+      })(window, document, 'script', 'https://assets.flodesk.com', '/universal', 'fd');
+    </script>
+  </head>
+  <body>
+    <header class="pt-8 pb-8 border-b-2 border-solid border-blue-200 md:pb-0 md:border-none md:py-10">
+      <div class="mx-auto max-w-7xl px-6 sm:px-6 lg:px-8">
+        <nav class="relative z-50 flex justify-between">
+          <div class="flex items-center md:gap-x-12">
+            <a aria-label="Home" href="/" class="text-3xl font-bold text-pink-500 lg:text-2xl">odarun</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-16 py-20 text-center lg:py-32">
+        <h1 class="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">Simplify product
+          <span class="relative whitespace-nowrap text-blue-600">
+            <svg aria-hidden="true" viewBox="0 0 418 42" class="absolute left-0 top-2/3 h-[0.58em] w-full fill-blue-300/70" preserveAspectRatio="none"><path d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z"></path>
+            </svg>
+
+            <span class="relative">listing & ordering</span>
+          </span> for print on demand creators.
+        </h1>
+        <p class="mx-auto mt-6 max-w-2xl text-2xl tracking-tight text-slate-700">Most print on demand listing software is hard to use. We simplify the repetitive task of listing and ordering your products so you can focus on what you do best.</p>
+
+        <div class="mt-10 flex justify-center gap-x-6">
+          <a class="group inline-flex ring-1 items-center justify-center rounded-full py-2 px-4 text-sm focus:outline-none ring-slate-200 text-slate-700 hover:text-slate-900 hover:ring-slate-300 active:bg-slate-100 active:text-slate-600 focus-visible:outline-blue-600 focus-visible:ring-slate-300" variant="outline" color="slate" href="#waitlist">
+            <span>Join the waitlist</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Feature Section -->
+      <section id="features" aria-label="Features for running your books" class="relative overflow-hidden bg-blue-600 pb-28 pt-20 sm:py-32">
+        <div class="mx-auto max-w-full px-4 sm:px-6 lg:px-8 relative">
+          <div class="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
+            <h2 class="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">Everything you need to manage your listings.</h2>
+            <p class="mt-6 text-xl tracking-tight text-blue-100">Well almost everything! We continue to add more features to help your business go faster, quicker. </p>
+          </div>
+          <div class="mt-8 md:mt-16 grid grid-cols-1 items-center gap-y-2 pt-10 sm:gap-y-6 md:mt-20 lg:grid-cols-12 lg:pt-0">
+            <div class="-mx-4 flex overflow-x-auto pb-4 sm:mx-0 lg:overflow-hidden sm:pb-0 lg:col-span-5">
+              <div class="relative z-10 flex gap-x-4 whitespace-nowrap px-4 sm:mx-auto sm:px-0 lg:mx-0 lg:block lg:gap-x-0 lg:gap-y-1 lg:whitespace-normal">
+                <div class="lg:before:content-['1'] lg:before:flex lg:before:text-8xl lg:before:absolute lg:before:top-4 lg:before:left-4 lg:before:text-blue-800 relative rounded-full px-4 py-1 lg:rounded-l-xl lg:rounded-r-none lg:py-6 lg:pl-24 lg:pr-6 bg-white lg:bg-white/10 lg:ring-1 lg:ring-inset ring-white/10 lg:hover:bg-white/10 lg:bg-transparent">
+                  <h3>
+                    <button class="featureButton font-display lg:text-lg lg:font-semibold text-blue-600 lg:text-white" type="button" onclick="swapFeature(this, 'product')">
+                      <span class="absolute inset-0 rounded-full lg:rounded-l-xl lg:rounded-r-none"></span>
+                      Product Listing
+                    </button>
+                  </h3>
+                  <p class="mt-1 hidden lg:block text-white lg:text-blue-200">Add new products and publish to your stores. No need to wait around, simply add, publish and go.</p>
+                </div>
+                <div class="lg:before:content-['2'] lg:before:flex lg:before:text-8xl lg:before:absolute lg:before:top-4 lg:before:left-4 lg:before:text-blue-800 relative rounded-full px-4 py-1 lg:rounded-l-xl lg:rounded-r-none lg:py-6 lg:pl-24 lg:pr-6 bg-white/10 ring-white/10 lg:hover:bg-white/10 lg:bg-transparent">
+                  <h3>
+                    <button class="featureButton font-display lg:text-lg lg:font-semibold text-blue-100 lg:text-white" type="button" onclick="swapFeature(this, 'collection')">
+                      <span class="absolute inset-0 rounded-full lg:rounded-l-xl lg:rounded-r-none"></span>
+                      Product Collections
+                    </button>
+                  </h3>
+                  <p class="mt-1 hidden lg:block text-white lg:text-blue-200">Group similar products into a collection and publish to your store as a single product with multiple variants.</p>
+                </div>
+                <div class="lg:before:content-['3'] lg:before:flex lg:before:text-8xl lg:before:absolute lg:before:top-4 lg:before:left-4 lg:before:text-blue-800 relative rounded-full px-4 py-1 lg:rounded-l-xl lg:rounded-r-none lg:py-6 lg:pl-24 lg:pr-6 bg-white/10 ring-white/10 lg:hover:bg-white/10 lg:bg-transparent">
+                  <h3>
+                    <button class="featureButton font-display lg:text-lg lg:font-semibold text-blue-100 lg:text-white" type="button" onclick="swapFeature(this, 'order')">
+                      <span class="absolute inset-0 rounded-full lg:rounded-l-xl lg:rounded-r-none"></span>
+                      Order Processing
+                    </button>
+                  </h3>
+                  <p class="mt-1 hidden lg:block text-white lg:text-blue-200">Pull in new orders from your store and send to the relevant print provider for processing and fulfillment.</p>
+                </div>
+                <div class="lg:before:content-['4'] lg:before:flex lg:before:text-8xl lg:before:absolute lg:before:top-4 lg:before:left-4 lg:before:text-blue-800 relative rounded-full px-4 py-1 lg:rounded-l-xl lg:rounded-r-none lg:py-6 lg:pl-24 lg:pr-6 bg-white/10 ring-white/10 lg:hover:bg-white/10 lg:bg-transparent">
+                  <h3>
+                    <button class="featureButton font-display lg:text-lg lg:font-semibold text-blue-100 lg:text-white" type="button" onclick="swapFeature(this, 'media')">
+                      <span class="absolute inset-0 rounded-full lg:rounded-l-xl lg:rounded-r-none"></span>
+                      Media Management
+                    </button>
+                  </h3>
+                  <p class="mt-1 hidden lg:block text-white lg:text-blue-200">Securely store or remove product designs. Generate and upload up to 9 mockups for each product listing.</p>
+                </div>
+                <div class="lg:before:content-['5'] lg:before:flex lg:before:text-8xl lg:before:absolute lg:before:top-4 lg:before:left-4 lg:before:text-blue-800 relative rounded-full px-4 py-1 lg:rounded-l-xl lg:rounded-r-none lg:py-6 lg:pl-24 lg:pr-6 bg-white/10 ring-white/10 lg:hover:bg-white/10 lg:bg-transparent">
+                  <h3>
+                    <button class="featureButton font-display lg:text-lg lg:font-semibold text-blue-100 lg:text-white" type="button" onclick="swapFeature(this, 'dashboard')">
+                      <span class="absolute inset-0 rounded-full lg:rounded-l-xl lg:rounded-r-none"></span>
+                      Dashboard
+                    </button>
+                  </h3>
+                  <p class="mt-1 hidden lg:block text-white lg:text-blue-200">Track the most important metrics (revenue, sales, product count, etc) as your business grows.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Feature Images -->
+            <div class="lg:col-span-7">
+              <div id="product" role="tabpanel" tabindex="0" class="featureImg">
+                <div class="w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
+                  <img alt="" fetchpriority="high" width="2174" height="4000" decoding="async" class="w-full" style="color:transparent" src="img/odarun_product.png">
+                </div>
+              </div>
+              <div id="collection" role="tabpanel" tabindex="-1" class="featureImg" style="display: none;">
+                <div class="w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
+                  <img alt="" fetchpriority="high" width="2174" height="4000" decoding="async" class="w-full" style="color:transparent" src="img/odarun_collection.png">
+                </div>
+              </div>
+              <div id="order" role="tabpanel" tabindex="-1" class="featureImg" style="display: none;">
+                <div class="w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
+                  <img alt="" fetchpriority="high" width="2174" height="4000" decoding="async" class="w-full" style="color:transparent" src="img/odarun_order.png">
+                </div>
+              </div>
+              <div id="media" role="tabpanel" tabindex="-1" class="featureImg" style="display: none;">
+                <div class="w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
+                  <img alt="" fetchpriority="high" width="2174" height="4000" decoding="async" class="w-full" style="color:transparent" src="img/odarun_media.png">
+                </div>
+              </div>
+              <div id="dashboard" role="tabpanel" tabindex="-1" class="featureImg" style="display: none;">
+                <div class="w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
+                  <img alt="" fetchpriority="high" width="2174" height="4000" decoding="async" class="w-full" style="color:transparent" src="img/odarun_dashboard.png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Waiting List -->
+       <section id="waitlist" class="pb-28 pt-20">
+        <div id="fd-form-67d379c3c3f2e55494ef9cd8"></div>
+        <script>
+          window.fd('form', {
+            formId: '67d379c3c3f2e55494ef9cd8',
+            containerEl: '#fd-form-67d379c3c3f2e55494ef9cd8'
+          });
+        </script>
+       </section>
+    </main>
+
+    <!-- CTA Section
+    <section id="get-started-today" class="relative overflow-hidden bg-blue-600 py-32">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
+        <div class="mx-auto max-w-lg text-center">
+          <h2 class="font-display text-3xl tracking-tight text-white sm:text-4xl">Get started today</h2>
+          <p class="mt-4 text-xl tracking-tight text-white/80">We built odarun because we experienced pain using existing print on demand solutions. Try it out today.</p>
+          <a class="group inline-flex items-center justify-center rounded-full py-2 px-6 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-white text-slate-900 hover:bg-blue-50 active:bg-blue-200 active:text-slate-600 focus-visible:outline-white mt-10" color="white" variant="solid" href="https://app.odarun.com?auth=signUp" target="_blank">Get started with a 7 day free trial</a>
+        </div>
+      </div>
+    </section> -->
+
+    <footer class="bg-slate-50">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col items-center border-t py-10 border-slate-200 sm:flex-row-reverse sm:justify-between">
+          <p id="copyright" class="mt-6 text-sm text-slate-500 sm:mt-0"></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/faq.js"></script>
+    <script src="./js/pricing.js"></script>
+    <script src="./js/feature.js"></script>
+    <script>
+      document.getElementById('copyright').appendChild(document.createTextNode(`Copyright © ${new Date().getFullYear()} Wulo. All rights reserved.`))</script>
+    </script>
+  </body>
+</html>
